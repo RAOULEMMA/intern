@@ -1,0 +1,27 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: blueviolet;
+
+}
+ul li{
+    color: #adff2f;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+
+}
+.task{
+    border-radius: 15px;
+    border-color: brown;
+    border-top: 6px;
+}
+button{
+    border-color: green;
+    border-radius: 4px;
+    background-color: brown;
+    color: white;
+}

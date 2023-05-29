@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link href="assets/css/todo.css" rel="stylesheet">
+</head>
+<body>
+    <ul id="task-list">
+        <Li>task 1</Li>
+        <Li>task 2</Li>
+        <Li>task 3</Li>
+    </ul>
+    <input type="text" id="task"/>
+    <button id="add-task">add task</button>
+    <script>
+        //get the buttun in html
+        var button = document.getElementById("add-task");
+        var tasklist = document.getElementById("task-list");
+        //get the input in the html
+        var input = document.getElementById("task");
+        var tasks = [];
+        button.addEventListener("click",function(){
+            //add the task to our task list
+            tasks.push(input.value);
+            let li = document.createElement("li");
+            let todo = document.createTextNode(input.value);
+            li.appendChild(todo);
+
+            tasklist.appendChild(li);
+            //console log (tasks;)
+        })
+
+
+    </script>
+    
+</body>
+</html>
